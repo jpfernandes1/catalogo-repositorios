@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Catálogo de Repositórios Favoritos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um **catálogo de repositórios do GitHub** criado com **React** (usando `create-react-app`).  
+Ele consome a **API do GitHub** e mostra os repositórios que você favoritar.  
 
-## Available Scripts
+> Observação: este projeto ainda está em desenvolvimento, e novas funcionalidades serão adicionadas em breve.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Listar repositórios favoritos de um usuário do GitHub.
+- Exibir informações básicas como nome do repositório, descrição e link.
+- Interface simples e intuitiva para explorar seus projetos favoritos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Styled Components
+- GitHub API
+- HTML / CSS / JavaScript
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como criar o projeto localmente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clonar o repositório:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/jpfernandes1/catalogo-repositorios.git
+cd catalogo-repositorios
+```
 
-### `npm run eject`
+2. **Instalar dependências:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Rodar o projeto em modo de desenvolvimento:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O app será iniciado em [http://localhost:3000](http://localhost:3000) e qualquer alteração no código será refletida automaticamente.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Como foi criado
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este projeto foi iniciado com o comando:
 
-### Code Splitting
+```bash
+npx create-react-app meu-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Isso criou a estrutura inicial do React, e a partir daí adicionamos os componentes, integração com a API do GitHub e estilos usando Styled Components.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Próximos passos
 
-### Making a Progressive Web App
+- Adicionar autenticação para favoritar repositórios do próprio usuário.
+- Melhorar a interface e responsividade.
+- Adicionar paginação ou filtros nos repositórios.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Contato
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por João Paulo Fernandes – jp_fernandes1@live.com
