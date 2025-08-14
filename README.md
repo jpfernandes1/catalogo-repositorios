@@ -61,18 +61,25 @@ Isso criou a estrutura inicial do React, e a partir daí adicionamos os componen
 
 ---
 
-Foi instalado também o react router para definição das rotas:
+Foram instalados também:
+
+1 - react router para definição das rotas:
 
 ```bash
 npm install react-router-dom
 ```
 
-E o styled components:
+2 - styled components para estilos:
 
 ```bash
 npm install styled-components
 ```
 
+3 - React icons para importar ícones:
+
+```bash
+npm install react-icons
+```
 
 ## Próximos passos
 
