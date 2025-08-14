@@ -61,6 +61,13 @@ Isso criou a estrutura inicial do React, e a partir daí adicionamos os componen
 
 ---
 
+Foi instalado também o react router para definição das rotas:
+
+```bash
+npm install react-router-dom
+```
+
+
 ## Próximos passos
 
 - Adicionar autenticação para favoritar repositórios do próprio usuário.
