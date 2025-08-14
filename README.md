@@ -67,6 +67,12 @@ Foi instalado também o react router para definição das rotas:
 npm install react-router-dom
 ```
 
+E o styled components:
+
+```bash
+npm install styled-components
+```
+
 
 ## Próximos passos
 
