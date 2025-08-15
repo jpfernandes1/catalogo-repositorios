@@ -97,4 +97,5 @@ npm install axios
 
 ## Contato
 
-Desenvolvido por João Paulo Fernandes – jp_fernandes1@live.com
+Desenvolvido por João Paulo Fernandes – jp_fernandes1@live.com <br>
+🔗 [linkedin](https://www.linkedin.com/in/jpaulo-fernandes)
