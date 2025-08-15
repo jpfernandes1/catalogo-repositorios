@@ -1,6 +1,5 @@
-import React, {useState, useCallback} from 'react'
+import React, {useState, useCallback, useEffect} from 'react'
 import {FaGithub, FaPlus, FaSpinner, FaBars, FaTrash} from 'react-icons/fa'
-import {Title} from './styles'
 import {Container, Form, SubmitButton, List, DeleteButton} from './styles'
 import api from '../../services/api';
 
@@ -8,9 +7,16 @@ import api from '../../services/api';
 export default function Main(){
 
     const [newRepo, setNewRepo] = useState('');
-    const [repositorios, setRepositorios] = useState([]);
+    const [repositorios, setRepositorios] = useState(() => {
+    const repoStorage = localStorage.getItem('repos');
+    return repoStorage ? JSON.parse(repoStorage) : [];
+});
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
+
+    useEffect(() =>{
+        localStorage.setItem('repos', JSON.stringify(repositorios));
+    }, [repositorios])
 
     const handleSubmit = useCallback((e) => {
         e.preventDefault();
