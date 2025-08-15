@@ -10,24 +10,30 @@ export default function Main(){
     const [newRepo, setNewRepo] = useState('');
     const [repositorios, setRepositorios] = useState([]);
     const [loading, setLoading] = useState(false)
+    const [error, setError] = useState('')
 
     const handleSubmit = useCallback((e) => {
         e.preventDefault();
 
         async function submit(){
             setLoading(true);
+            setError('')
             try{
-            const response = await api.get(`repos/${newRepo}`);
-            const data = {
-                name: response.data.full_name,
-            }
+                const response = await api.get(`repos/${newRepo}`);
+                const data = {
+                    name: response.data.full_name,
+                }
             
             setRepositorios([...repositorios, data])
             setNewRepo('');
-        } catch(error){
-            console.log(error);
-        } finally{
-            setLoading(false);
+            } catch(error){
+                if (error.response && error.response.status === 404) {
+                    setError('Repositório não encontrado.');
+                } else {
+                    setError('Erro ao buscar repositório. Tente novamente.');
+                }
+            } finally{
+                setLoading(false);
         }
     }
 
@@ -67,6 +73,9 @@ export default function Main(){
                 </SubmitButton>
                 
             </Form>
+
+             {/* Mostra erro se existir */}
+            {error && <p style={{color: 'red', marginTop: '5px'}}>{error}</p>}
 
             <List>
                 {repositorios.map(repo => (
