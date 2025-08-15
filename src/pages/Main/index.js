@@ -19,7 +19,14 @@ export default function Main(){
             setLoading(true);
             setError('')
             try{
+                const hasRepo = repositorios.find(repo => repo.name === newRepo);
+                if(hasRepo){
+                    setError('Repositório já adicionado!')
+                    return
+                }
+
                 const response = await api.get(`repos/${newRepo}`);
+
                 const data = {
                     name: response.data.full_name,
                 }
