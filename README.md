@@ -81,6 +81,12 @@ npm install styled-components
 npm install react-icons
 ```
 
+4 - Axios para requisições HTTP (API)
+
+```bash
+npm install axios
+```
+
 ## Próximos passos
 
 - Adicionar autenticação para favoritar repositórios do próprio usuário.
