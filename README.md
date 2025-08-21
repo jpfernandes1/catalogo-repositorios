@@ -1,3 +1,4 @@
+# Projeto Didático
 # Catálogo de Repositórios Favoritos
 
 Este projeto é um **catálogo de repositórios do GitHub** criado com **React** (usando `create-react-app`).  
