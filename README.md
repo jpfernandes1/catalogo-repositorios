@@ -1,3 +1,4 @@
+# Projeto Didático
 # Catálogo de Repositórios Favoritos
 
 Este projeto é um **catálogo de repositórios do GitHub** criado com **React** (usando `create-react-app`).  
@@ -61,6 +62,32 @@ Isso criou a estrutura inicial do React, e a partir daí adicionamos os componen
 
 ---
 
+Foram instalados também:
+
+1 - react router para definição das rotas:
+
+```bash
+npm install react-router-dom
+```
+
+2 - styled components para estilos:
+
+```bash
+npm install styled-components
+```
+
+3 - React icons para importar ícones:
+
+```bash
+npm install react-icons
+```
+
+4 - Axios para requisições HTTP (API)
+
+```bash
+npm install axios
+```
+
 ## Próximos passos
 
 - Adicionar autenticação para favoritar repositórios do próprio usuário.
@@ -71,4 +98,5 @@ Isso criou a estrutura inicial do React, e a partir daí adicionamos os componen
 
 ## Contato
 
-Desenvolvido por João Paulo Fernandes – jp_fernandes1@live.com
+Desenvolvido por João Paulo Fernandes – jp_fernandes1@live.com <br>
+🔗 [linkedin](https://www.linkedin.com/in/jpaulo-fernandes)
